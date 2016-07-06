@@ -38,8 +38,9 @@
 |
 */
 
-$route['default_controller'] = "blog";
+$route['default_controller'] = "pages";
 $route['404_override'] = '';
+$route['view/(:num)'] = 'blog/view/$1';
 
 $route['register'] = 'login/register';
 $route['logout'] = 'login/logout';
